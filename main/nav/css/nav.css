@@ -1,6 +1,7 @@
 /* common*/
 .nav{
     display:flex;
+    overflow: auto;
 }
 
 [class^="nav__button"] {

@@ -6,7 +6,7 @@
     padding: 24px;  
 }
 
-[class^="header__button"] {
+[type^="button"] {
     padding:0;
     margin-right:16px;
     background: 0;
@@ -17,7 +17,7 @@
     margin-right:16px;
 }
 
-.header__button_checkstatus {
+.header__checkstatus {
     margin-right:0;
 }
 
@@ -38,7 +38,7 @@
     padding: 24px 16px;  
 }
 
-.header__button_profile , .header__button_chat , .header__button_call , .header__dividerMenu, .header__discription {
+.header__profile , .header__chat , .header__call , .header__dividerMenu, .header__discription {
     display:none;
 }
 
@@ -59,7 +59,7 @@
     display: none;
 }
 
-.header__button_call {
+.header__call {
     margin-left:auto;
 }
 
@@ -68,7 +68,7 @@
     margin-right: 20px;
 }
 
-.header__button_menu, .header__button_profile{
+.header__menu, .header__profile{
     margin-right: 0;
 }
 }
@@ -77,8 +77,8 @@
 /* L */
 @media (min-width:1100px) {
    
-.header__button_menu, .header__dividerMenu , .header__logo, 
-.header__button_call, .header__button_chat, .header__button_profile,
+.header__menu, .header__dividerMenu , .header__logo, 
+.header__call, .header__chat, .header__profile,
 .header__dividerRepair  {
     display: none;
 }
