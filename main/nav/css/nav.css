@@ -1,7 +1,12 @@
 /* common*/
 .nav{
     display:flex;
-    overflow: auto;
+    overflow: auto;     
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.nav::-webkit-scrollbar {
+    width: 0;
 }
 
 [class^="nav__button"] {
@@ -11,6 +16,7 @@
     color: #7E7E82;
     padding: 8px 12px;
     white-space:nowrap;
+    letter-spacing:-0.2px;
 }
 
 .nav__button-active {
@@ -19,8 +25,6 @@
     border-radius: 6px;
     padding: 8px 16px;
 }
-
-
 
 /* L */
 @media (min-width:1100px) {
