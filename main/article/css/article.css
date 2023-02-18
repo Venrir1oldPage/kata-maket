@@ -23,7 +23,14 @@ height:auto;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
+    cursor: pointer;
 }
+
+.article__moreButton:hover, .article__moreButton:focus{
+    color: #FF3E79;
+    transition: color 0.6s ease;
+}
+
 .moreButton__icon {
   margin-right:16px;  
 }

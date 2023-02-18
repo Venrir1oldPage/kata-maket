@@ -1,0 +1,37 @@
+.menuMain__list {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.menuMain__item, .menuMain__item-active{
+margin: 0;
+padding: 4px; 
+margin-bottom: 24px;
+}
+
+.menuMain__link{
+   text-decoration: none;
+   display: block;
+   text-align: center;
+}
+
+.menuMain__item-active{
+color:#7E7E82 ;
+}
+
+.menuMain__item-active::before {
+  content: "";
+  position: absolute;
+  align-self: center;
+  left: 0;
+  width: 4px;
+  height: 32px;
+  background: rgba(65, 246, 215, 1);
+  border-radius: 0 4px 4px 0;
+}
+
+.menuMain__item:hover {
+color:#FF3E79 ;
+transition: color 0.6s ease;
+}

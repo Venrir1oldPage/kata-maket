@@ -1,5 +1,7 @@
 /* common*/
-.nav{
+.nav__list {
+    margin: 0;
+    padding: 0;
     display:flex;
     overflow: auto;     
     -ms-overflow-style: none;
@@ -9,33 +11,51 @@
     width: 0;
 }
 
-[class^="nav__button"] {
+[class^="nav__item"] {
     background: 0;
-    border: 0;
+    list-style: none;
+    margin:0;
     padding:0;
-    color: #7E7E82;
-    padding: 8px 12px;
-    white-space:nowrap;
-    letter-spacing:-0.2px;
+    cursor: pointer;
 }
 
-.nav__button-active {
+.nav__link {
+    display: block;
+    text-decoration: none;
+    color: #7E7E82;
+    background: 0;
+    list-style: none;
+    border: 0;
+    margin:0;
+    padding:0;
+    margin: 8px 16px;
+    white-space:nowrap;
+    letter-spacing:-0.2px;
+
+}
+.nav__item-active {
     background: #FFFFFF;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
-    padding: 8px 16px;
+    padding:0;
+    margin: 0;
+}
+.nav__link:hover, .nav__link:focus {
+color: #FF3E79;
+transition: color 0.6s ease;
 }
 
 /* L */
 @media (min-width:1100px) {
-.nav{
+.nav__list{
+ max-width: 1063px;
   flex-wrap: wrap;
   margin-right:32px;
+  row-gap: 8px;
 }
-[class^="nav__button"] {
-    padding: 8px 16px;
+
+.nav__link{
     font-size: 16px;
     line-height: 24px;
 }
-
 }

@@ -1,0 +1,67 @@
+.menuFooter__buttons{
+display: flex;
+margin-bottom: 16px;
+}
+
+.menuFooter__call, .menuFooter__chat, .menuFooter__profile {
+    padding:0;
+    background: 0;
+    border: 0;
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.menuFooter__call:hover, .menuFooter__chat:hover, .menuFooter__profile:hover,
+.menuFooter__call:hover, .menuFooter__chat:hover, .menuFooter__profile:hover {
+background-color: rgb(255, 62, 121, 0.6);
+transition:  background-color 0.6s ease;
+}
+.menuFooter__chat{
+    margin: 0 16px;
+}
+.menuFooter__email{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color:#1B1C21;
+}
+
+.menuFooter__phone {
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+    color:#1B1C21;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom:40px;
+    display: block;
+}
+
+.menuFooter__phone:hover, .menuFooter__email:hover, .menuFooter__language:hover,
+.menuFooter__phone:focus, .menuFooter__email:focus, .menuFooter__language:focus {
+    color: #FF3E79;
+    transition: color 0.6s ease;
+}
+
+.menuFooter__languages {
+    display: flex;
+}
+
+.menuFooter__language, .menuFooter__language_active{
+border: 0;
+background: 0;
+padding:0;
+padding-right: 7px;
+}
+
+.menuFooter__language_active {
+color: #7E7E82;
+}
