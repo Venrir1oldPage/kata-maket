@@ -64,4 +64,6 @@ padding-right: 7px;
 
 .menuFooter__language_active {
 color: #7E7E82;
+border: 0;
+background: 0;
 }
