@@ -5,6 +5,7 @@
     url('css/fonts/TTLakes-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
     }
 
 @font-face {
@@ -14,6 +15,7 @@
         url('fonts/TTLakes-Medium.woff') format('woff');
         font-weight: medium;
         font-style: medium;
+        font-display: swap;
         }
 
 @font-face {
@@ -23,6 +25,7 @@
             url('fonts/TTLakes-Bold.woff') format('woff');
             font-weight: 700;
             font-style: bold;
+            font-display: swap;
             }
 
 body {
