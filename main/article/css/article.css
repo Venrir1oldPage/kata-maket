@@ -3,6 +3,7 @@
     margin:0;
     display:flex; 
     flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 
 .article__img{
@@ -69,6 +70,7 @@ height:auto;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0 24px;
+    padding-bottom: 32px;
 }
 .article__textContent {
 width: 43%;
@@ -92,6 +94,7 @@ width: 43%;
     justify-content: space-between;
     padding-left: 34px;
     padding-right: 28px;
+    padding-bottom: 51px;
 }
 .article__img {
     width: 50%; 

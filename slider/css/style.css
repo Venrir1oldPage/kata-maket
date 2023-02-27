@@ -28,28 +28,18 @@
             font-display: swap;
             }
 
-body {
-    width:320px;
-    margin:0;
-    font-family: 'TT Lakes';
-    font-size: 16px;
-    font-weight: medium;
-    line-height: 24px;
-    background-color:  #FFFFFF;
-    color: #1B1C21;
-    position: fixed;
-    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 0 24px;
+body{ 
+margin:0;
+padding:0;
+font-family: 'TT Lakes Regular';
+background-color:#F8F8F8;
+width: 100%;
 }
 
-.menuMain{
-    margin-bottom: auto;
-}
 
-.menuFooter{
-    margin-bottom: 32px;
-}
+/* S */
+@media (max-width:630px) {}
+/* M */
+@media (min-width:631px) and (max-width:1100px) {}
+/* L */
+@media (min-width:1101px) {}
