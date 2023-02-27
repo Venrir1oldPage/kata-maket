@@ -64,6 +64,7 @@ padding-left:24px;
 .brend__link:hover::after, .brend__link:focus::after {
     background-color: rgb(255, 62, 121, 0.2);
     border:0;
+    transition: background-color 1.2s ease;
 }
 
 
