@@ -1,10 +1,9 @@
 window.addEventListener('resize', function() {
-    if (window.innerWidth > 501) {
+    if (window.innerWidth > 500) {
       showHideHandler()
         };
-
 });   
-if (window.innerWidth > 501) {
+if (window.innerWidth > 500) {
     showHideHandler()
     };
 
