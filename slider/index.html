@@ -31,16 +31,16 @@
   </div>
 </section>
   <script src="js/showMore.js"></script>
+  <!-- <script src="js/swiper.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script>
 if (window.matchMedia("(max-width: 500px)").matches) { 
-    var swiper = new Swiper(".mySwiper", {
+    let swiper = new Swiper(".mySwiper", {
       slidesPerView: "auto",
       spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        mousewheel: true,
-       keyboard: true,
       },
     });
   };
