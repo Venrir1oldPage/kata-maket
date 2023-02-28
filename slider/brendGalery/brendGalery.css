@@ -70,6 +70,10 @@ padding-left:24px;
 
 /* S */
  @media (max-width:500px) {
+.brendGalery{
+    min-width:240px;
+}
+    
 .brendGalery__showHideButton {
 display: none;
     }
