@@ -1,7 +1,7 @@
 var init = false;
 
 function swiperHandler() {
-  if (window.innerWidth <= 501) {
+  if (window.innerWidth <= 500) {
     if (!init) {
       init = true;
       swiper = new Swiper ('.mySwiper', {
