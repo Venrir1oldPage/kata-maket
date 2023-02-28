@@ -1,7 +1,7 @@
 var init = false;
 
 function swiperHandler() {
-  if (window.innerWidth <= 500) {
+  if (window.innerWidth <= 768) {
     if (!init) {
       init = true;
       swiper = new Swiper ('.mySwiper', {
@@ -29,4 +29,4 @@ function swiperHandler() {
   }
 }
 swiperHandler();
-window.addEventListener("resize",swiperHandler);
+window.addEventListener('resize',swiperHandler);
