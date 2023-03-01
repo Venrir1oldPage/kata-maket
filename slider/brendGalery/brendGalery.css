@@ -93,12 +93,13 @@ display: none;
         content: "";
         position: absolute;
         background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-        width: 100px;
+        width: 24px;
         height: 70%;
         right: 0;
         top: 0;
         z-index: 1;
      }
+
 }
 .swiper-slide {
     margin: 0;
