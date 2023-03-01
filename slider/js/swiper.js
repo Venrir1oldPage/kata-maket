@@ -1,7 +1,8 @@
-var init = false;
+let init = false;
+let mobile = window.matchMedia("(min-width: 0px) and (max-width: 501px)");
 
 function swiperHandler() {
-  if (window.innerWidth < 501) {
+  if (mobile.matches) {
     if (!init) {
       init = true;
       swiper = new Swiper ('.mySwiper', {
