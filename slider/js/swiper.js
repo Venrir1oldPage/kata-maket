@@ -1,8 +1,12 @@
 let init = false;
 let swiper;
 
+let width = document.body.scrollWidth;
+console.log(width);
+
+
 function swiperHandler() {
-  if (window.innerWidth < 501 || /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+  if (width < 501 ) {
     if (!init) {
       init = true;
       swiper = new Swiper ('.mySwiper', {
