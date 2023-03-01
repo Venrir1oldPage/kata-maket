@@ -5,7 +5,7 @@ function swiperHandler() {
   if (mobile.matches) {
     if (!init) {
       init = true;
-      swiper = new Swiper ('.mySwiper', {
+      let swiper = new swiper ('.mySwiper', {
         slidesPerView: "auto",
         grabCursor:true,
         spaceBetween: 30,
