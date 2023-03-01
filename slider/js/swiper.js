@@ -1,15 +1,14 @@
 let init = false;
-let width = window.screen.width;
-console.log(width);
+let swiper;
 
 function swiperHandler() {
-  if (width < 501) {
+  if (window.innerWidth < 501 || /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
     if (!init) {
       init = true;
       swiper = new Swiper ('.mySwiper', {
         slidesPerView: "auto",
         grabCursor:true,
-        spaceBetween: 30,
+        spaceBetween: 16,
         slideToClickedSlide:true,
         pagination: {
           el: '.swiper-pagination',
@@ -32,3 +31,4 @@ function swiperHandler() {
 }
 swiperHandler();
 window.addEventListener('resize',swiperHandler);
+
