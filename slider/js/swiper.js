@@ -2,8 +2,6 @@ let init = false;
 let swiper;
 
 let width = document.body.scrollWidth;
-console.log(width);
-
 
 function swiperHandler() {
   if (width < 501 ) {
