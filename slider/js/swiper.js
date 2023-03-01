@@ -1,12 +1,12 @@
 let init = false;
-let mobile = window.matchMedia("(min-width: 0px) and (max-width: 501px)");
-let swiper;
+let width = window.screen.width;
+console.log(width);
 
 function swiperHandler() {
-  if (mobile.matches) {
+  if (width < 501) {
     if (!init) {
       init = true;
-      swiper = new swiper ('.mySwiper', {
+      swiper = new Swiper ('.mySwiper', {
         slidesPerView: "auto",
         grabCursor:true,
         spaceBetween: 30,
