@@ -24,7 +24,7 @@ function swiperHandler() {
             pageUpDown:true,
         },
         mousewheel: {
-            sensitivity:1,
+            sensitivity:20,
         },
     });
     }
