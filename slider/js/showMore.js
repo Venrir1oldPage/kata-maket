@@ -9,6 +9,6 @@
       if (showHideButton.textContent === "Показать все"){
       showHideButtonDescription.textContent="Скрыть";
       } else {
-        showHideButton.textContent="Показать все";
+      showHideButtonDescription.textContent="Показать все";
       }
     });
