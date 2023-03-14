@@ -22,13 +22,6 @@
     }
 }
 
-.content-wrapper{
-    @media (min-width:1101px){
-        position: relative;
-        width: calc(100vw - 320px);
-        left: 320px;
-    }   
-}
 
 .side-menu_hidden{
 @media (max-width:1100px){   

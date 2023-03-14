@@ -215,17 +215,14 @@ align-items: center;
 .price__service, .service__name{
     @media (min-width:661px){
         min-width: 372px;
-        flex-grow: 2; 
         }
     @media (min-width:1101px){
           min-width: 470px;
-          flex-grow: 1; 
         }
     }
 .price__cost, .service__cost {
         @media (min-width:661px){
             min-width: 96px;
-            flex-grow: 1; 
         }
         @media (min-width:1101px){
             min-width: 153px;
@@ -234,7 +231,6 @@ align-items: center;
 .price__term, .service__term{
         @media (min-width:661px){
             min-width: 219px;  
-            flex-grow: 1; 
             align-self: flex-end;
         }
         @media (min-width:1101px){

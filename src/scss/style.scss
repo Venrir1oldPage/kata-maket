@@ -50,16 +50,26 @@ body {
     background:linear-gradient(to right, $white, $blue-gray);
  }
   
+.content-wrapper {
+    @media (min-width:1101px){
+    max-width: 1080px;
+    box-sizing: inherit;
+    display: block;
+    position: relative;
+    left: 320px;
+    border-right:  $lightCyan 2px solid;
+    background-color: $blue-gray;
+    }
+}
 
 .big-wrapper {
     @media (min-width:1101px){
-    max-width: 1200px;
-    // margin:0 auto;
+    max-width: 1400px;
     display: flex;
     flex-direction: row;
     justify-items: center;
-    // border-left: $lightCyan 2px solid;
-    // border-right: $lightCyan 2px solid;
+border-left: $lightCyan 2px solid;
+margin:0 auto;
 }
 }
 
