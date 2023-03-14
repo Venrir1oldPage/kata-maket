@@ -5,8 +5,6 @@ function openCall() {
   let callButtonHeader = document.querySelector('.page-header__call');
   let overlay = document.querySelector('.modal-overlay');
 
-  console.log(overlay);
-
   exitButton.addEventListener('click', function () {
     modal.classList.add('modal-call_hidden');
     overlay.classList.add('modal-overlay_hidden');

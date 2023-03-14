@@ -73,10 +73,8 @@ margin:0 auto;
 }
 }
 
-
-
 @import "../../node_modules/swiper/swiper-bundle.css";
 @import "../blocks/page-header/page-header.scss", "../blocks/main/main.scss", "../blocks/main/nav/nav.scss", "../blocks/main/article/article.scss","../blocks/main/brendGalery/brandGalary.scss",
  "../blocks/main/typeGalery/typeGalary.scss", "../blocks/page-footer/page-footer.scss", "../blocks/main/price/price.scss",
- "../blocks/side-menu/side-menu.scss","../blocks/side-menu/header/header.scss","../blocks/side-menu/main/main.scss", "../blocks/side-menu/footer/footer.scss",
+ "../blocks/side-menu/side-menu.scss","../blocks/side-menu/side-menu__header.scss","../blocks/side-menu/side-menu__main.scss", "../blocks/side-menu/side-menu__footer.scss",
  "../blocks/modal/modal-call.scss", "../blocks/modal/modal-callback.scss","../blocks/modal/modal-overlay.scss";

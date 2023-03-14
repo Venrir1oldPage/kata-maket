@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const MinimizeCssAssetWebpackPlugin = require('css-minimizer-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -52,14 +53,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'), //более корректно,чем просто дист
     clean: true,
   },
-  resolve: {
-    extensions: ['.js', '.json', '.png'],
-    alias: {
-      '@js': path.resolve(__dirname, 'src/js'),
-      '@': path.resolve(__dirname, 'src'),
-      '@img': path.resolve(__dirname, 'src/img'),
-    },
-  },
+
   devServer: {
     port: 4200,
   },
@@ -76,8 +70,17 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].[hash].css',
     }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/img'),
+          to: path.resolve(__dirname, 'dist/img'),
+        },
+      ],
+    }),
   ],
   optimization: optimization(),
+  devtool: 'source-map',
 
   module: {
     // loaders

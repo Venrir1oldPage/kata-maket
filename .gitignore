@@ -1,4 +1,2 @@
-package-lock.json
-.eslinttrc.json
 node_modules/
 dist/

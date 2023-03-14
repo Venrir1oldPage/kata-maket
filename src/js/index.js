@@ -38,5 +38,3 @@ const enableSwiper = function () {
 window.addEventListener('resize', breakpointChecker), breakpointChecker();
 
 import '../scss/style.scss';
-
-console.log('index working');
