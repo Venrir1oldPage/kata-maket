@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "prettier" /*prettier должен быть последним. 
+        Он удаляет некоторые правила eslint из-за которых могут возникать конфликты. */
+    ],
+    "overrides": [
+    ],
+    "parser": "@babel/eslint-parser", // Парсер для обработки jsx кода
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",// версия стандарта JavaScript
+        "sourceType": "module" // Позволяет использовать import/export
+    },
+    "plugins": [// Здесь мы подключаем используемые плагины
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error",  // Обязательно!! Подсвечивает ошибки из Prettier.
+        "react/prop-types": 0 // Отключаем правило проверки передаваемых типов.
+    }
+}

@@ -1,0 +1,72 @@
+@import "~normalize.css";
+
+$fuchsia:#FF3E79;
+$fuchsia05:rgba(255, 62, 120, 0.5);
+$fuchsia02:rgba(255, 62, 120, 0.2);
+$cyan:rgba(65, 246, 215, 1);
+$lightCyan: #D9FFF5;
+$white: #FFFFFF;
+$white96:rgba(255, 255, 255, 0.96);
+$lightGray: #EAEAEA;
+$darkGray:#7E7E82;
+$black: #1B1C21;
+$blue-gray: #F8F8F8;
+$gray3: #B5B6BC;
+
+
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('./fonts/TTLakes-Regular.eot');
+    src: url('./fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+@font-face {
+        font-family: 'TT Lakes';
+        src: url('./fonts/TTLakes-Medium.eot');
+        src: url('./fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/TTLakes-Medium.woff') format('woff');
+        font-weight: medium;
+        font-style: medium;
+        font-display: swap;
+        }
+@font-face {
+            font-family: 'TT Lakes';
+            src: url('./fonts/TTLakes-Bold.eot');
+            src: url('./fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/TTLakes-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: bold;
+            font-display: swap;
+            }
+
+body {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    background-color:$blue-gray;
+    color: $black;
+    background:linear-gradient(to right, $white, $blue-gray);
+ }
+  
+
+.big-wrapper {
+    @media (min-width:1101px){
+    max-width: 1200px;
+    // margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    // border-left: $lightCyan 2px solid;
+    // border-right: $lightCyan 2px solid;
+}
+}
+
+
+
+@import "../../node_modules/swiper/swiper-bundle.css";
+@import "../blocks/page-header/page-header.scss", "../blocks/main/main.scss", "../blocks/main/nav/nav.scss", "../blocks/main/article/article.scss","../blocks/main/brendGalery/brandGalary.scss",
+ "../blocks/main/typeGalery/typeGalary.scss", "../blocks/page-footer/page-footer.scss", "../blocks/main/price/price.scss",
+ "../blocks/side-menu/side-menu.scss","../blocks/side-menu/header/header.scss","../blocks/side-menu/main/main.scss", "../blocks/side-menu/footer/footer.scss",
+ "../blocks/modal/modal-call.scss", "../blocks/modal/modal-callback.scss","../blocks/modal/modal-overlay.scss";

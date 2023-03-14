@@ -1,0 +1,141 @@
+%divider{
+    content:"";
+    display: block;
+    background:$lightGray; 
+    border-radius: 1px;
+    width: 2px;
+    height:32px;
+    align-self:center;
+    flex-shrink: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+%btnshablon{
+    padding:0;
+    background: 0;
+    border: 0;
+    background-color:$fuchsia;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+}
+
+.page-header {
+    width: 100%;
+    box-sizing: border-box;
+    display:flex;
+    background: $white;
+    border-bottom: 1px solid $lightCyan;
+    padding: 24px 16px;  
+    flex-wrap: nowrap;
+    align-items: center;
+@media (min-width:1101px) {
+    width: auto;
+    float:right;
+    margin-right: 30px;
+    background:0;
+    border-bottom: 0;
+    padding: 0;  
+    padding-top: 42px;  
+    margin-left:auto;
+    }
+&::after {
+ @extend %divider;
+ margin-left: auto;
+ @media (min-width:661px) and (max-width:1100px) {
+    margin-left:20px;
+ }
+@media (min-width:1101px){
+display: none;
+}
+}
+&::before {
+ @extend %divider;
+ display:none;
+ @media (min-width:661px) and (max-width:1100px) {
+    display: block;
+ }
+}
+}
+
+.page-header__menu, .page-header__call, .page-header__chat, .page-header__profile, .page-header__repair, .page-header__checkstatus {
+  @extend %btnshablon;
+&:hover, &:focus {
+    background-color: $fuchsia05;
+    transition: background-color 0.6s ease;
+}
+}
+
+.page-header__menu {
+    order: -1;
+    margin: 0;
+    margin-right:16px;
+    @media (min-width:661px){
+        margin-right:0;
+    }
+    @media (min-width:1101px) {
+        display: none;
+    }
+}
+
+.page-header__link{
+display: block;
+padding: 0;
+margin: 0;
+&:hover, &:focus {
+    filter: opacity(0.6);
+    transition:filter 0.4s ease;
+}
+@media (min-width:1101px){
+    display: none;
+}
+}
+
+.page-header__call, .page-header__chat, .page-header__profile {
+    display: none;
+@media (min-width:661px) and (max-width:1100px) {
+    display: block;
+}
+}
+
+.page-header__call {
+ margin-left:auto;
+}
+
+.page-header__repair{
+order: 2;
+@media (min-width:1101px) {
+    order: 0;
+    margin: 0;
+}
+}
+.page-header__chat{
+    margin: 0 16px;
+}
+
+.page-header__checkstatus {
+    margin-right:0;
+    order: 3;
+    margin-left: 16px;
+@media (min-width:1101px) {
+    order: 0;
+    margin: 0;
+}
+}
+
+.page-header__discription{
+    display: none;
+    margin:0;
+    align-self: center;
+    margin-right:8px;
+    margin-left:32px;
+    font-style: medium;
+@media (min-width:1101px){
+    display: block;
+}
+}

@@ -1,0 +1,34 @@
+.page-footer {
+color:$darkGray;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 19px;
+padding-top: 16px;
+row-gap: 16px;
+text-align: center;
+border-top: $lightCyan 1px solid ;
+@media (min-width:661px)  {
+    flex-direction: row;
+    padding:24px;
+    padding-top: 32px;
+    justify-content: space-between;
+}
+}
+
+.page-footer__policy{
+    color:$darkGray;
+    text-decoration: none;
+    @media (min-width:661px)  {
+        text-align: start;
+    }
+}
+
+.page-footer__info {
+    @media (min-width:661px)  {
+        width:213px;
+        text-align: end;
+    } 
+}
