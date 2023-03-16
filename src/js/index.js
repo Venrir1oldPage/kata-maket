@@ -8,13 +8,13 @@ import Swiper, { Pagination } from 'swiper';
 Swiper.use([Pagination]);
 
 const breakpoint = window.matchMedia('(min-width:661px)');
-let swiperBrend;
+let swiper;
 
 const breakpointChecker = function () {
   // если шире - сетка
   if (breakpoint.matches === true) {
     // удалить, если активировано
-    if (swiperBrend !== undefined) swiperBrend.destroy(true, true);
+    if (swiper !== undefined) swiper.destroy(true, true);
     return;
     // если меньше 501 то надо включить свайпер
   } else if (breakpoint.matches === false) {
@@ -23,7 +23,7 @@ const breakpointChecker = function () {
 };
 
 const enableSwiper = function () {
-  swiperBrend = new Swiper('.swiper', {
+  swiper = new Swiper('.swiper', {
     slidesPerView: 'auto',
     grabCursor: true,
     spaceBetween: 16,

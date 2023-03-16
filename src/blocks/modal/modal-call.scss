@@ -1,7 +1,7 @@
 .modal-call{
     width: 100%;
     height:100%;
-    transform: translateX(0px);
+    transform: translateX(0%);
     transition: transform 0.7s ease-in-out;
     background-color: $white;
     position:fixed;
@@ -158,7 +158,7 @@ margin-bottom: 22px;
 }
 
 .modal-call_hidden{
-    transform: translateX(500px);
+    transform: translateX(120%);
     transition: transform 0.7s ease-in-out;
     .modal-call__exit{
         display: none;

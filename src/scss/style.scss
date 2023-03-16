@@ -41,7 +41,9 @@ $gray3: #B5B6BC;
             font-style: bold;
             font-display: swap;
             }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'TT Lakes';
     font-size: 16px;
